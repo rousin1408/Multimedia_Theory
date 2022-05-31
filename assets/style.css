@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: sans-serif;
+    background-color: rgba(31, 31, 31, 0.8);
+}
+.wrapper{
+ color: white;
+ text-align: center;
+ align-items: center;
+ padding: 5rem 2em;
+}
+.wrapper h1{
+    padding-bottom: 1em;
+    font-size: 3vw;
+}
+.deskripsi{
+    text-align: center;
+    padding: 0.1% 16%;
+    margin-bottom: 1%;
+    font-size: 0,5vw;
+    line-height: 2.5vw;
+}
+.button_first{
+    display: flex;
+    gap: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.button_first a {
+    padding: 1rem 2rem;
+    font-size: 1.4vw;
+    background-color: rgb(204, 71, 224, 0.2);
+    border-radius: .5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.button_first a.teaser_button {
+    background-color: #D32F2F;
+    
+}
+
+.button_first a.teaser_button:hover {
+    background-color: #ef6a6a;
+}
+
+
+
+.button_first a.video_button {
+    background-color: #D32F2F;
+}
+
+.button_first a.video_button:hover {
+    background-color: #ef6a6a;
+}
+.arrow {
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
+  
+  .arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25rem;
+  }
+  
+#information{
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+      
+}
+#information p{
+    text-align: left;
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  @media (max-width: 650px) {
+    #information {
+      display: block;
+      font-size: 80%;
+    }
+    p {
+      position: relative;
+      margin: 3rem;
+      padding: 1rem;
+      background: rgba(white, 0.8);
+    }
+  }
+  
