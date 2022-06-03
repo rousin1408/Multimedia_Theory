@@ -88,7 +88,8 @@ body{
   
 #information{
     display: grid;
-    padding: 2rem;
+    
+    padding: 10rem;
     grid-template-columns: 300px 1fr;
     gap: 1rem;
     align-items: center;
@@ -100,6 +101,11 @@ body{
 #information p{
     text-align: left;
 }
+video {
+  width: 60%;
+  height: 60%;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -116,4 +122,77 @@ img {
       background: rgba(white, 0.8);
     }
   }
-  
+  #sinopsis{
+    padding-top: 20%;
+  }
+  /* Create three equal columns that floats next to each other */
+.column {
+  float:inherit;
+  width: 25%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+#article{
+ display: flex;
+ box-sizing: border-box;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.card{
+  background-color: #000000;
+  width: 270px;
+
+  margin:10px;
+  border-radius:15px;
+}
+.card h2{
+  text-align: left;
+}
+.card-image{
+  background-color: #ef6a6a;
+  height: 150px;
+  margin-bottom: 15px;
+}
+.image-1{
+  background-image: url('./image/fotolinkedlist.png');
+}
+.image-2{
+  background-image: url('./image/fotolinkedlist.png');
+}
+.image-3{
+  background-image: url('./image/fotolinkedlist.png');
+}
+.card h2{
+  padding :10px;
+}
+.card p{
+  padding :10px;
+  text-align: left;
+}
+.card a{
+  background-color: rgb(224, 10, 10);
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+
+}
+.card a:hover{
+  background-color: rgb(234, 80, 80);
+}
