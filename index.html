@@ -8,15 +8,18 @@
     <title>Multimedia</title>
 </head>
 <body>
- <div class="wrapper">
+ <div class="wrapper fade-left">
     <h1>Linked List Tutorial</h1>
+    <img src="./assets/image/linkedlist.jpg" alt="">
+   
     <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, atque rerum ab quasi provident corporis vel delectus harum alias, adipisci sapiente. Praesentium ea, consequatur perferendis minima debitis voluptatum tenetur pariatur.</p>
+    
     <div class="button_first">
         <a href="" class="teaser_button">Teaser</a>
         <a href="" class="video_button">Video</a>
     </div>
 
-        <h1>Scroll Down</h1>
+        <h4>Scroll Down</h4>
         <div class="container">
             <a data-scroll href="#information">
                 <div class="arrow"></div>
@@ -24,8 +27,11 @@
         </div>
         
         <section id="information">
-            <img src="assets/image/fotolinkedlist.png" alt="" height="" width="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, atque rerum ab quasi provident corporis vel delectus harum alias, adipisci sapiente. Praesentium ea, consequatur perferendis minima debitis voluptatum tenetur pariatur.</p>
+            <img src="assets/image/fotolinkedlist.png"  />
+           <div class="col">
+            <p><h1>Linked List</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, atque rerum ab quasi provident corporis vel delectus harum alias, adipisci sapiente. Praesentium ea, consequatur perferendis minima debitis voluptatum tenetur pariatur.</p>
+           </div>
+            
         </section>
 
         <section id="video">
@@ -35,49 +41,104 @@
                 Your browser does not support HTML video.
               </video>
         </section>
+
         <section id="sinopsis">
-            <h3>Sinopsis</h3>
+            <h1>Sinopsis</h1>
             <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, atque rerum ab quasi provident corporis vel delectus harum alias, adipisci sapiente. Praesentium ea, consequatur perferendis minima debitis voluptatum tenetur pariatur.</p>
         </section>
+
+       
+       <section id="casting-movie">
+        <h2>Casting of The Movie</h2>
         <section id="casting">
-            <div class="row">
-                <center>
-                    <div class="column" style="background-color:#aaa;">
-                        <h2>Column 1</h2>
-                        <p>Some text..</p>
-                      </div>
-                      <div class="column" style="background-color:#bbb;">
-                        <h2>Column 2</h2>
-                        <p>Some text..</p>
-                      </div>
-                      <div class="column" style="background-color:#ccc;">
-                        <h2>Column 3</h2>
-                        <p>Some text..</p>
-                      </div>
-                </center>
+            <div class="card-2">
+                <h2>Gerry Guinardi</h2>
+                <p>as Caster</p> 
+            </div>
+            <div class="card-2">
+                <h2>Jesse</h2>
+                <p>as Caster</p> 
+            </div>
+            <div class="card-2">
+                <h2>Kevin</h2>
+                <p>as Caster</p> 
+            </div>
                 
         </section>
-        <section id="article">
-            <div class="card">
-                <div class="card-image image-1"></div>
-                <h2>haha</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque numquam aliquam tempora nulla aut. Cumque saepe ipsam molestiae ad, eum libero amet quasi doloribus reiciendis nobis laudantium mollitia odit nulla.</p>
-                <a href="">more</a>
-            </div>
-            <div class="card">
-                <div class="card-image image-2"></div>
-                <h2>haha</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque numquam aliquam tempora nulla aut. Cumque saepe ipsam molestiae ad, eum libero amet quasi doloribus reiciendis nobis laudantium mollitia odit nulla.</p>
-                <a href="">more</a>
-            </div>
-            <div class="card">
-                <div class="card-image image-3"></div>
-                <h2>haha</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque numquam aliquam tempora nulla aut. Cumque saepe ipsam molestiae ad, eum libero amet quasi doloribus reiciendis nobis laudantium mollitia odit nulla.</p>
-                <a href="">more</a>
-            </div>
+       </section>
+        
+        <section id="related-article">
+            <h1>Related Article</h1>
+            <section id="article">
+            
+                <div class="card">
+                    <div class="card-image image-1"></div>
+                    <h2>haha</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque numquam aliquam tempora nulla aut. Cumque saepe ipsam molestiae ad, eum libero amet quasi doloribus reiciendis nobis laudantium mollitia odit nulla.</p>
+                    <a href="">more</a>
+                </div>
+                <div class="card">
+                    <div class="card-image image-2"></div>
+                    <h2>haha</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque numquam aliquam tempora nulla aut. Cumque saepe ipsam molestiae ad, eum libero amet quasi doloribus reiciendis nobis laudantium mollitia odit nulla.</p>
+                    <a href="">more</a>
+                </div>
+                <div class="card">
+                    <div class="card-image image-3"></div>
+                    <h2>haha</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque numquam aliquam tempora nulla aut. Cumque saepe ipsam molestiae ad, eum libero amet quasi doloribus reiciendis nobis laudantium mollitia odit nulla.</p>
+                    <a href="">more</a>
+                </div>
+            </section>
         </section>
+        
+       
     
 </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+</script>
+
 </html>

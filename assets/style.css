@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
     font-family: sans-serif;
@@ -11,17 +11,17 @@ body{
  color: white;
  text-align: center;
  align-items: center;
- padding: 5rem 2em;
+ padding: 2rem 1em;
 }
 .wrapper h1{
-    padding-bottom: 1em;
-    font-size: 3vw;
+    padding-bottom: 1rem;
+    font-size: 2vw;
 }
 .deskripsi{
     text-align: center;
     padding: 0.1% 16%;
     margin-bottom: 1%;
-    font-size: 0,5vw;
+    font-size: 0,3vw;
     line-height: 2.5vw;
 }
 .button_first{
@@ -31,12 +31,12 @@ body{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .button_first a {
     padding: 1rem 2rem;
-    font-size: 1.4vw;
+    font-size: 1vw;
     background-color: rgb(204, 71, 224, 0.2);
     border-radius: .5rem;
     color: #fff;
@@ -66,11 +66,11 @@ body{
 }
 .arrow {
     box-sizing: border-box;
-    height: 5vw;
-    width: 5vw;
+    height: 2vw;
+    width: 2vw;
     border-style: solid;
     border-color: white;
-    border-width: 0px 1px 1px 0px;
+    border-width: 0px 3px 3px 0px;
     transform: rotate(45deg);
     transition: border-width 150ms ease-in-out;
   }
@@ -83,13 +83,12 @@ body{
   .container {
     display: flex;
     justify-content: center;
-    padding-bottom: 25rem;
+    padding-bottom: 1rem;
   }
   
 #information{
     display: grid;
-    
-    padding: 10rem;
+    padding: 10rem 5rem 10rem 10rem;
     grid-template-columns: 300px 1fr;
     gap: 1rem;
     align-items: center;
@@ -105,8 +104,15 @@ video {
   width: 60%;
   height: 60%;
 }
-
-img {
+#video{
+padding-top: 5rem;
+}
+.wrapper img{
+  max-width: 30%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+#information img {
     max-width: 100%;
     height: auto;
   }
@@ -123,7 +129,11 @@ img {
     }
   }
   #sinopsis{
-    padding-top: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  #casting-movie h2{
+    padding-bottom: 3%;
   }
   /* Create three equal columns that floats next to each other */
 .column {
@@ -195,4 +205,81 @@ img {
 }
 .card a:hover{
   background-color: rgb(234, 80, 80);
+}
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#casting{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+ .card-2{
+  background-color: #ff0000;
+  width: 270px;
+  margin: 10px;
+  border-radius:15px;
+}
+.card-2 h2{
+  text-align: center;
+  padding :10px 10px 3px 10px;
+}
+
+.card-2 p{
+
+  padding :0px 10px 10px 10px;
+  text-align: center;
+}
+#related-article{
+  padding-top: 10%;
+}
+.col{
+  display: flexbox;
+}
+.col {
+  text-align: left;
 }
