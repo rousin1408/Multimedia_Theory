@@ -90,7 +90,7 @@ body{
     display: grid;
     padding: 10rem 5rem 10rem 10rem;
     grid-template-columns: 300px 1fr;
-    gap: 1rem;
+    gap: 3rem;
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
@@ -110,7 +110,10 @@ padding-top: 5rem;
 .wrapper img{
   max-width: 30%;
     height: auto;
-    padding-bottom: 2rem;
+
+}
+.color{
+  color: #ff0000;
 }
 #information img {
     max-width: 100%;
