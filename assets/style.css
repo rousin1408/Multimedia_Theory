@@ -178,28 +178,28 @@ padding-top: 5rem;
   margin-bottom: 15px;
 }
 .image-1{
-  background-image: url('./image/fotolinkedlist.png');
+  background-image: url('./image/linkedlistgeekforgeek.png');
 }
 .image-2{
-  background-image: url('./image/fotolinkedlist.png');
+  background-image: url('./image/linkedlisttutorialpoint.jpg');
 }
 .image-3{
-  background-image: url('./image/fotolinkedlist.png');
+  background-image: url('./image/linkedlistprogramiz.png');
 }
 .card h2{
-  padding :10px;
+  padding :15px;
 }
 .card p{
-  padding :10px;
+  padding :15px;
   text-align: left;
 }
 .card a{
   background-color: rgb(224, 10, 10);
   color: #fff;
-  padding: 15px 20px;
+  padding: 15px 15px;
   display: block;
   text-align: center;
-  margin: 20px 50px;
+  margin: 15px 15px;
   text-decoration: none;
 
 }
@@ -213,14 +213,25 @@ padding-top: 5rem;
 .reveal.active {
   opacity: 1;
 }
-.active.fade-bottom {
-  animation: fade-bottom 1s ease-in;
+.fade-bottom1 {
+  animation: fade-bottom1 1s ease-in;
 }
+
 .active.fade-left {
   animation: fade-left 1s ease-in;
 }
 .active.fade-right {
   animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom1 {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes fade-bottom {
   0% {
