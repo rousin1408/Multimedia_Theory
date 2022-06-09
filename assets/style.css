@@ -21,8 +21,15 @@ body{
     text-align: center;
     padding: 0.1% 16%;
     margin-bottom: 1%;
-    font-size: 0,3vw;
+    font-size: 0,9vw;
     line-height: 2.5vw;
+}
+.deskripsi2{
+  text-align: center;
+  padding: 0.1% 16%;
+  margin-bottom: 1%;
+  font-size: 1.2vw;
+  line-height: 2.5vw;
 }
 .button_first{
     display: flex;
@@ -88,14 +95,14 @@ body{
   
 #information{
     display: grid;
-    padding: 10rem 5rem 10rem 10rem;
+    padding: 10rem 5rem 20rem 10rem;
     grid-template-columns: 300px 1fr;
     gap: 3rem;
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
     font: 500 100%/1.5 system-ui;
-      
+    
 }
 #information p{
     text-align: left;
@@ -179,6 +186,20 @@ padding-top: 5rem;
   background-color: #ef6a6a;
   height: 250px;
   margin-bottom: 15px;
+}
+.card2-image{
+  background-color: #ef6a6a;
+  height: 300px;
+  margin-bottom: 15px;
+}
+.image-Gerry{
+  background-image: url('./image/foto_gerry.jpg');
+}
+.image-Jesse{
+  background-image: url('./image/foto_Jesse.jpg');
+}
+.image-Kevin{
+  background-image: url('./image/foto_Kevin.jpg');
 }
 .image-1{
   background-image: url('./image/linkedlistgeekforgeek.png');
@@ -273,7 +294,7 @@ padding-top: 5rem;
   flex-wrap: wrap;
  }
  .card-2{
-  background-color: #ff0000;
+  background-color: #D32F2F;
   width: 270px;
   margin: 10px;
   border-radius:15px;
@@ -281,11 +302,12 @@ padding-top: 5rem;
 .card-2 h2{
   text-align: center;
   padding :10px 10px 3px 10px;
+  font-size: 1em;
 }
 
 .card-2 p{
 
-  padding :0px 10px 10px 10px;
+  padding :0px 50px 50px 50px;
   text-align: center;
 }
 #related-article{
@@ -301,7 +323,8 @@ padding-top: 5rem;
   padding: 50px;
 }
 .wrap video {
-  width: 100%;
+  align-items: flex-start;
+  width: 50%;
   height: auto;
 }
 .wrap p {
@@ -311,4 +334,31 @@ padding-top: 5rem;
   margin-bottom: 1%;
   font-size: 0,2vw;
   line-height: 1.5vw;
+}
+.button_second{
+  display: flex;
+  gap: 1rem 2rem;
+  justify-content: left;
+  align-items: left;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.button_second a {
+  padding: 1rem 2rem;
+  font-size: 1vw;
+  background-color: rgb(204, 71, 224, 0.2);
+  border-radius: .5rem;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-decoration: none;
+}
+.button_second a.video_button {
+  background-color: #D32F2F;
+}
+.button_second a.video_button:hover {
+  background-color: #ef6a6a;
 }
